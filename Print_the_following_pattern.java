@@ -7,12 +7,21 @@ class Seasons
         int n,i,j,k;
         Scanner sc=new Scanner(System.in);
         n=sc.nextInt();
-        for(i=1;i<=n;i++)
+        k=n;
+        for(i=0;i<n;i++)
         {
-            for(j=i;j<=n;j++)
+            for(j=0;j<n;j++)
             {
-               System.out.print(j+" ");   
+                if(i==j || (i+j)==(n-1))
+                {
+                    System.out.print(k+" ");
+                }
+                else
+                {
+                    System.out.print(" ");
+                }
             }
+            k--;
             System.out.println();
         }
         sc.close();
