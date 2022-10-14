@@ -4,15 +4,24 @@ class Seasons
 {
     public static void main(String args[])
     {
-        int n,i,j;
+        int n,i,j,k;
         Scanner sc=new Scanner(System.in);
         n=sc.nextInt();
-        for(i=n;i>=1;i--)
+        k=n-1;
+        for(i=0;i<n;i++)
         {
-            for(j=1;j<=i;j++)
+            for(j=0;j<n;j++)
             {
-                System.out.print(j);
+                if(j==0 || i==j || i+j==k)
+                {
+                    System.out.print("* ");
+                }
+                else
+                {
+                    System.out.print("  ");
+                }
             }
+            k++;
             System.out.println();
         }
         sc.close();
