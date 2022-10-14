@@ -9,9 +9,20 @@ class Seasons
         n=sc.nextInt();
         for(i=1;i<=n;i++)
         {
-            for(j=n;j>=1;j--)
+            for(j=1;j<=n;j++)
             {
-                System.out.print(j+" ");
+                if(j==n|| j==(n-1))
+                {
+                    continue;
+                }
+                else
+                {
+                    System.out.print(j);
+                }
+            }
+            for(k=1;k<=(n-3);k++)
+            {
+               System.out.print(k);
             }
             System.out.println();
         }
