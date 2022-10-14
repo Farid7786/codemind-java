@@ -12,13 +12,13 @@ class Seasons
         {
             for(j=0;j<n;j++)
             {
-                if(i==j || i+j==k)
+                if(i==j)
                 {
-                    System.out.print("x");
+                    System.out.print("0");
                 }
                 else
                 {
-                    System.out.print("0");
+                    System.out.print("x");
                 }
             }
             System.out.println();
