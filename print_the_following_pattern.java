@@ -20,7 +20,7 @@ class Seasons
                     System.out.print(j);
                 }
             }
-            for(k=1;k<=(n-3);k++)
+            for(k=(n-3);k>0;k--)
             {
                System.out.print(k);
             }
