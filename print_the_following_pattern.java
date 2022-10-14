@@ -11,18 +11,7 @@ class Seasons
         {
             for(j=1;j<=n;j++)
             {
-                if(j==n|| j==(n-1))
-                {
-                    continue;
-                }
-                else
-                {
-                    System.out.print(j);
-                }
-            }
-            for(k=(n-3);k>0;k--)
-            {
-               System.out.print(k);
+                System.out.print((char)(64+i)+" ");
             }
             System.out.println();
         }
