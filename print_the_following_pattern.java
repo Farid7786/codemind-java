@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.Math;
 class Seasons
 {
     public static void main(String args[])
@@ -11,16 +12,15 @@ class Seasons
         {
             for(j=0;j<n;j++)
             {
-                if(j==0 || i==j || i+j==k)
+                if(i==j || i+j==k)
                 {
-                    System.out.print("* ");
+                    System.out.print("x");
                 }
                 else
                 {
-                    System.out.print("  ");
+                    System.out.print("0");
                 }
             }
-            k++;
             System.out.println();
         }
         sc.close();
